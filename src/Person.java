@@ -39,19 +39,19 @@ public class Person {
         switch (c){
             case 'h':
                 if (this.phoneCall){
-                    System.out.format("%-18s\t| %-18s\t| %-18d\t%n",name,phoneNumber,balance);
+                    System.out.format("| %-18s\t| %-18s\t| %-8d|%n",name,phoneNumber,balance);
                 }
                 break;
 
             case 'i':
                 if (this.phoneInternet){
-                    System.out.format("%-18s\t| %-18s\t| %-18d\t%n",name,phoneNumber,balance);
+                    System.out.format("| %-18s\t| %-18s\t| %-8d|%n",name,phoneNumber,balance);
                 }
                 break;
 
             case 'f':
                 if (this.payMethod && this.balance < 0){
-                    System.out.format("%-18s\t| %-18s\t| %-18d\t%n",name,phoneNumber,balance);
+                    System.out.format("| %-18s\t| %-18s\t| %-8d|%n",name,phoneNumber,balance);
                 }
                 break;
 
@@ -59,7 +59,7 @@ public class Person {
                 String tmp = "09";
 
                 if (tmp.equals(this.phoneNumber.substring(0,2))){
-                    System.out.format("%-18s\t| %-18s\t| %-18d\t%n",name,phoneNumber,balance);
+                    System.out.format("| %-18s\t| %-18s\t| %-8d|%n",name,phoneNumber,balance);
                 }
                 break;
 
